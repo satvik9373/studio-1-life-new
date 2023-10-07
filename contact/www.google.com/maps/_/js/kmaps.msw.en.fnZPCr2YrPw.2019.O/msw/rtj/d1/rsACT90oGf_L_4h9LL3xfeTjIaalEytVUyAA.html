@@ -1,5 +1,0 @@
-this._=this._||{};(function(_){var window=this; try{ var e=function(a){return"GET"===a.method&&a.headers.get("accept").includes("text/html")};var g=function(a,b){b&&("navigate"===b.request.mode||e(b.request))&&b.respondWith(a.scope.fetch(b.request).catch(()=>f(a)))},k=function(a){return
-a.scope.caches.open("offline-v1").then(b=>{b.addAll(h(a))})},h=function(a){return[`/maps/preview/pwa/ttoffline.html?hl=${a.scope._SERVICE_WORKER_LANGUAGE||"en"}`]},f=function(a){return a.scope.caches.match(h(a)[0]).then(b=>b||null)},l=class{constructor(a){this.scope=a;this.scope.addEventListener("fetch",b=>{g(this,b)})}};var
-m=function(a,b){b={data:b,error:null};a.ports&&a.ports.length&&a.ports[0].postMessage(b)};new class{constructor(a){this.scope=self;const b=a(this.scope);this.scope.addEventListener("install",c=>{c.waitUntil(k(b))});this.scope.addEventListener("message",c=>{var
-d=c.data.type;switch(d){case "kill":m(c,{type:d});this.scope.registration.unregister();break;case "fv":m(c,{type:d,value:1});break;default:d={error:1},c.ports&&c.ports.length&&c.ports[0].postMessage(d)}})}}(a=>new l(a)); }catch(e){_._DumpException(e)}
-})(this._); // Google Inc.
