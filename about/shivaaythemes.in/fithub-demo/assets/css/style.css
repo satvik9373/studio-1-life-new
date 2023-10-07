@@ -5731,7 +5731,7 @@ section.main-video {
 @media screen and (max-width: 991px) {
     .site-header,
     .site-header.sticky-header {
-        background: #ffffff;
+        background: black;
         height: 80px;
         padding: 0;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
